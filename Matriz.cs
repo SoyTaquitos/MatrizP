@@ -47,6 +47,7 @@ namespace MatrizP
         {
             Numeros n = new Numeros();
             double acum = 0;
+            bool b = true;
             for (int f1 = f; f1 >= 1; f1--)
             {
                 for (int c1 = c; c1 >= 1; c1--)
@@ -54,7 +55,15 @@ namespace MatrizP
                     n.Cargar(m[f1, c1]);
                     if (n.VerifPrimo())
                     {
-                        acum = acum + Math.Sqrt(c1);
+                        if(b)
+                        {
+                            acum = acum - Math.Sqrt(m[f1,c1]);
+                        }
+                        else
+                        {
+                            acum = acum + Math.Sqrt(m[f1,c1]);
+                        }
+                        b = !b;                       
                     }               
                 }
             }

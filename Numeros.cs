@@ -30,7 +30,7 @@ namespace MatrizP
         }
         public bool VerifPrimo() //Sin contar el número 1
         {
-            if (n >= 1)
+            if (n <= 1)
             {
                 return false;
             }
@@ -41,7 +41,7 @@ namespace MatrizP
                 {
                     return false;
                 }
-                i--; // i = i - 1;
+                i--;
             }
             return true;
         }
