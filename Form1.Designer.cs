@@ -48,6 +48,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.acumularElementosPrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +68,10 @@
             // 
             this.matriz1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cargarToolStripMenuItem,
-            this.descargarToolStripMenuItem});
+            this.descargarToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.toolStripTextBox1,
+            this.acumularElementosPrimosToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.matriz1ToolStripMenuItem.Text = "Matriz 1";
@@ -73,14 +79,16 @@
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cargarToolStripMenuItem.Text = "Cargar";
+            this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
+            this.descargarToolStripMenuItem.Click += new System.EventHandler(this.descargarToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -214,6 +222,25 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Resultados";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(224, 6);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Text = "Parte 1 ";
+            // 
+            // acumularElementosPrimosToolStripMenuItem
+            // 
+            this.acumularElementosPrimosToolStripMenuItem.Name = "acumularElementosPrimosToolStripMenuItem";
+            this.acumularElementosPrimosToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.acumularElementosPrimosToolStripMenuItem.Text = "Acumular elementos primos ";
+            this.acumularElementosPrimosToolStripMenuItem.Click += new System.EventHandler(this.acumularElementosPrimosToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,6 +296,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripMenuItem acumularElementosPrimosToolStripMenuItem;
     }
 }
 

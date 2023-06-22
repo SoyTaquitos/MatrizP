@@ -1,1 +1,9 @@
 D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\bin\Debug\MatrizP.exe.config
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\bin\Debug\MatrizP.exe
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\bin\Debug\MatrizP.pdb
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\obj\Debug\MatrizP.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\obj\Debug\MatrizP.Form1.resources
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\obj\Debug\MatrizP.Properties.Resources.resources
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\obj\Debug\MatrizP.csproj.GenerateResource.Cache
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\obj\Debug\MatrizP.exe
+D:\Visual Studio 2015\PROYECTOS\MatrizP\MatrizP\obj\Debug\MatrizP.pdb
