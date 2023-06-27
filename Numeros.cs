@@ -45,5 +45,25 @@ namespace MatrizP
             }
             return true;
         }
+        public int Fibonacci(int ele)
+        {
+            int i = 1;
+            int s = 0;
+            int a = 1;
+            int b = 0;
+            while (i <= ele)
+            {
+                b = s;
+                s = s + a;
+                a = b;             
+                i++;
+            }
+            return s;
+        }     
+            public bool VerificarPar()
+        {
+
+            return (n % 2 == 0);
+        }    
     }
 }

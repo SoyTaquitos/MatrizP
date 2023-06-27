@@ -32,6 +32,15 @@
             this.matriz1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.acumularElementosPrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contarElementosQueNoSeRepitenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarSerieFibonacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rigorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.segmentarParesYNoParesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -48,9 +57,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.acumularElementosPrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +82,14 @@
             this.descargarToolStripMenuItem,
             this.toolStripSeparator1,
             this.toolStripTextBox1,
-            this.acumularElementosPrimosToolStripMenuItem});
+            this.acumularElementosPrimosToolStripMenuItem,
+            this.frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem,
+            this.contarElementosQueNoSeRepitenToolStripMenuItem,
+            this.cargarSerieFibonacciToolStripMenuItem,
+            this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem,
+            this.rigorToolStripMenuItem,
+            this.segmentarParesYNoParesToolStripMenuItem,
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.matriz1ToolStripMenuItem.Text = "Matriz 1";
@@ -79,16 +97,77 @@
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
             this.cargarToolStripMenuItem.Text = "Cargar";
             this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
             this.descargarToolStripMenuItem.Click += new System.EventHandler(this.descargarToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(338, 6);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Text = "Parte 1 ";
+            // 
+            // acumularElementosPrimosToolStripMenuItem
+            // 
+            this.acumularElementosPrimosToolStripMenuItem.Name = "acumularElementosPrimosToolStripMenuItem";
+            this.acumularElementosPrimosToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.acumularElementosPrimosToolStripMenuItem.Text = "1.Acumular elementos primos ";
+            this.acumularElementosPrimosToolStripMenuItem.Click += new System.EventHandler(this.acumularElementosPrimosToolStripMenuItem_Click);
+            // 
+            // frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem
+            // 
+            this.frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem.Name = "frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem";
+            this.frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem.Text = "2.Frecuencia de un elemento en la matriz";
+            this.frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem.Click += new System.EventHandler(this.frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem_Click);
+            // 
+            // contarElementosQueNoSeRepitenToolStripMenuItem
+            // 
+            this.contarElementosQueNoSeRepitenToolStripMenuItem.Name = "contarElementosQueNoSeRepitenToolStripMenuItem";
+            this.contarElementosQueNoSeRepitenToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.contarElementosQueNoSeRepitenToolStripMenuItem.Text = "3.Contar elementos que no se repiten";
+            this.contarElementosQueNoSeRepitenToolStripMenuItem.Click += new System.EventHandler(this.contarElementosQueNoSeRepitenToolStripMenuItem_Click);
+            // 
+            // cargarSerieFibonacciToolStripMenuItem
+            // 
+            this.cargarSerieFibonacciToolStripMenuItem.Name = "cargarSerieFibonacciToolStripMenuItem";
+            this.cargarSerieFibonacciToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.cargarSerieFibonacciToolStripMenuItem.Text = "4.Cargar serie Fibonacci";
+            this.cargarSerieFibonacciToolStripMenuItem.Click += new System.EventHandler(this.cargarSerieFibonacciToolStripMenuItem_Click);
+            // 
+            // verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem
+            // 
+            this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem.Name = "verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem";
+            this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem.Text = "5.Verificar si las filas estan ordenas ascendentemente";
+            this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem.Click += new System.EventHandler(this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem_Click);
+            // 
+            // rigorToolStripMenuItem
+            // 
+            this.rigorToolStripMenuItem.Name = "rigorToolStripMenuItem";
+            this.rigorToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.rigorToolStripMenuItem.Text = "7.Verificar si la matriz esta ordenada con Rigor";
+            this.rigorToolStripMenuItem.Click += new System.EventHandler(this.rigorToolStripMenuItem_Click);
+            // 
+            // segmentarParesYNoParesToolStripMenuItem
+            // 
+            this.segmentarParesYNoParesToolStripMenuItem.Name = "segmentarParesYNoParesToolStripMenuItem";
+            this.segmentarParesYNoParesToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.segmentarParesYNoParesToolStripMenuItem.Text = "9.Segmentar filas en pares y no pares";
+            this.segmentarParesYNoParesToolStripMenuItem.Click += new System.EventHandler(this.segmentarParesYNoParesToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -222,30 +301,54 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Resultados";
             // 
-            // toolStripSeparator1
+            // textBox9
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(224, 6);
+            this.textBox9.Location = new System.Drawing.Point(712, 54);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(51, 20);
+            this.textBox9.TabIndex = 17;
             // 
-            // toolStripTextBox1
+            // label9
             // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox1.Text = "Parte 1 ";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(712, 38);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Elemento";
             // 
-            // acumularElementosPrimosToolStripMenuItem
+            // textBox10
             // 
-            this.acumularElementosPrimosToolStripMenuItem.Name = "acumularElementosPrimosToolStripMenuItem";
-            this.acumularElementosPrimosToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
-            this.acumularElementosPrimosToolStripMenuItem.Text = "Acumular elementos primos ";
-            this.acumularElementosPrimosToolStripMenuItem.Click += new System.EventHandler(this.acumularElementosPrimosToolStripMenuItem_Click);
+            this.textBox10.Location = new System.Drawing.Point(790, 54);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(53, 20);
+            this.textBox10.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(799, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Rigor";
+            // 
+            // ordenarFilasPorElNúmeroDePrimosToolStripMenuItem
+            // 
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Name = "ordenarFilasPorElNúmeroDePrimosToolStripMenuItem";
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Text = "10.Ordenar filas por el número de primos";
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Click += new System.EventHandler(this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(995, 545);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -299,6 +402,17 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripMenuItem acumularElementosPrimosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem frecuenciaDeUnElementoEnLaMatrizToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ToolStripMenuItem contarElementosQueNoSeRepitenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargarSerieFibonacciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rigorToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ToolStripMenuItem segmentarParesYNoParesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenarFilasPorElNúmeroDePrimosToolStripMenuItem;
     }
 }
 
