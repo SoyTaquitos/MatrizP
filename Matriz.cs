@@ -309,7 +309,10 @@ namespace MatrizP
         }   
         public void SegmentarFilasEnParesImpares() //Ejercicio 9 
         {
-            
+            for (int f1 = 1; f1 <= f; f1++)
+            {
+                this.SegmentarFilaParNoPar(f1);
+            }
         }
         public void OrdFilasPorCantPrimos() //Ejercicio 10
         {
