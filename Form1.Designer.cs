@@ -67,8 +67,6 @@
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cambiar2eToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordColToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,9 +97,7 @@
             this.rigorToolStripMenuItem,
             this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem,
             this.segmentarParesYNoParesToolStripMenuItem,
-            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem,
-            this.cambiar2eToolStripMenuItem,
-            this.ordColToolStripMenuItem});
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.matriz1ToolStripMenuItem.Text = "Matriz 1";
@@ -389,20 +385,6 @@
             this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem.Text = "6.Encontrar el elemento con mayor frecuencia de cada fila y añadir C++";
             this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem.Click += new System.EventHandler(this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem_Click);
             // 
-            // cambiar2eToolStripMenuItem
-            // 
-            this.cambiar2eToolStripMenuItem.Name = "cambiar2eToolStripMenuItem";
-            this.cambiar2eToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.cambiar2eToolStripMenuItem.Text = "Ordenar una fila";
-            this.cambiar2eToolStripMenuItem.Click += new System.EventHandler(this.cambiar2eToolStripMenuItem_Click);
-            // 
-            // ordColToolStripMenuItem
-            // 
-            this.ordColToolStripMenuItem.Name = "ordColToolStripMenuItem";
-            this.ordColToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.ordColToolStripMenuItem.Text = "Ord col";
-            this.ordColToolStripMenuItem.Click += new System.EventHandler(this.ordColToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,8 +464,6 @@
         private System.Windows.Forms.ToolStripMenuItem cargarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cambiar2eToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordColToolStripMenuItem;
     }
 }
 

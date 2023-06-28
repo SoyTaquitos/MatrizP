@@ -103,6 +103,17 @@ namespace MatrizP
                 }
             }
         }
+        public void OrdenarUnaColumna(int nc)
+        {
+            for (int t = 1; t <= f - 1; t++)
+            {
+                for (int d = f; d >= t + 1; d--)
+                {
+                    if (m[d, nc] < m[d - 1, nc])
+                        this.Intercambiar(d, nc, d - 1, nc);
+                }
+            }
+        }
         //Practico
         public double AcumularConPrimo() //Ejercicio 1
         {
