@@ -114,6 +114,27 @@ namespace MatrizP
                 }
             }
         }
+        public void SegmentarFilaParNoPar(int nf)
+        {
+            // i = Inicio; d = Desplazamiento
+            Numeros ele1 = new Numeros();
+            Numeros ele2 = new Numeros();
+            int fila = nf;
+            for (int i = 1; i <= c - 1; i++)
+            {
+                for (int d = c; d >= i + 1; d--)
+                {
+                    ele1.Cargar(m[fila, d]);
+                    ele2.Cargar(m[fila, d - 1]);
+                    if (ele1.VerificarPar() && !ele2.VerificarPar() ||
+                        ele1.VerificarPar() &&  ele2.VerificarPar() && m[fila,d] < m[fila,d-1] ||
+                        !ele1.VerificarPar() && !ele2.VerificarPar() && m[fila, d] < m[fila, d - 1])
+                    {
+                        this.Intercambiar(fila, d, fila, d - 1);
+                    }
+                }
+            }
+        }
         //Practico
         public double AcumularConPrimo() //Ejercicio 1
         {
@@ -286,39 +307,9 @@ namespace MatrizP
             }
             return true;
         }   
-        public void SegmentarFilasEnParesImpares() //Ejercicio 9 está mal
+        public void SegmentarFilasEnParesImpares() //Ejercicio 9 
         {
-            Numeros ele = new Numeros();
-            Numeros ele2 = new Numeros();            
-            int i;
-            for (int fp = 1; fp <= f; fp++)
-            {
-                for (int cp = 1; cp <= c; cp++)
-                {
-                    for (int fd = fp; fd <= f; fd++)
-                    {
-                        if (fd == fp)
-                        {
-                            i = cp;
-                        }
-                        else
-                        {
-                            i = 1;
-                        }
-                        for (int cd = i; cd <= c; cd++)
-                        {
-                            ele.Cargar(m[fd, cd]);
-                            ele2.Cargar(m[fp, cp]);
-                            if (ele.VerificarPar() && !ele2.VerificarPar() ||
-                                ele.VerificarPar() && ele2.VerificarPar() && m[fd,cd] < m [fp,cp] ||
-                                !ele.VerificarPar() && !ele2.VerificarPar() && m[fd,cd] < m[fp,cp])
-                            {
-                                this.Intercambiar(fd, cd, fp, cp);
-                            }
-                        }
-                    }
-                }
-            }
+            
         }
         public void OrdFilasPorCantPrimos() //Ejercicio 10
         {
