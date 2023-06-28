@@ -211,7 +211,25 @@ namespace MatrizP
         }
         public void MayorFrecuenciaUltimaColumna() //Ejercicio 6
         {
-           
+            int f1, c1, aux, may, aux2;
+            may = 0;
+            for (f1 = 1; f1 <= f; f1++)
+            {
+                aux2 = m[f1, 1];
+                aux = this.FrecuenciaDeUnElemento(m[f1, 1]);
+                for (c1 = 2; c1 <= c; c1++)
+                {
+                    aux = this.FrecuenciaDeUnElemento(m[f1, c1]);
+                    if (aux > may)
+                    {
+                        may = aux;
+                        aux2 = m[f1, c1];
+
+                    }
+                    m[f1, c + 1] = aux2;
+                }
+            }
+            c++;
         }
         public bool VerificarSiEstaOrdenadaConRigor(int r) //Ejercicio 7
         {
