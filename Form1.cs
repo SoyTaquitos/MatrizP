@@ -16,10 +16,11 @@ namespace MatrizP
         {
             InitializeComponent();
         }
-        Matriz m1;
+        Matriz m1,m2;
         private void Form1_Load(object sender, EventArgs e)
         {
             m1 = new Matriz();          
+            m2 = new Matriz();
         }
 
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -73,6 +74,27 @@ namespace MatrizP
         {
             m1.OrdFilasPorCantPrimos();
             textBox8.Text = m1.Descargar();
+        }
+
+        private void cargarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            m2.Cargar(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+        }
+
+        private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            textBox6.Text = m2.Descargar();
+        }
+
+        private void encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.MayorFrecuenciaUltimaColumna();
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox8.Text = string.Concat(m1.VerificarSiUnaMatrizEstaEnOtra(m2));
         }
     }
 }

@@ -41,6 +41,7 @@
             this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rigorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.segmentarParesYNoParesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -61,14 +62,19 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matriz2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.descargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.matriz1ToolStripMenuItem});
+            this.matriz1ToolStripMenuItem,
+            this.matriz2ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(995, 24);
@@ -87,7 +93,9 @@
             this.contarElementosQueNoSeRepitenToolStripMenuItem,
             this.cargarSerieFibonacciToolStripMenuItem,
             this.verificarSiLasFilasEstanOrdenasAscendentementeToolStripMenuItem,
+            this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem,
             this.rigorToolStripMenuItem,
+            this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem,
             this.segmentarParesYNoParesToolStripMenuItem,
             this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
@@ -97,21 +105,21 @@
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
             this.cargarToolStripMenuItem.Text = "Cargar";
             this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
             this.descargarToolStripMenuItem.Click += new System.EventHandler(this.descargarToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(338, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(347, 6);
             // 
             // toolStripTextBox1
             // 
@@ -168,6 +176,13 @@
             this.segmentarParesYNoParesToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
             this.segmentarParesYNoParesToolStripMenuItem.Text = "9.Segmentar filas en pares y no pares";
             this.segmentarParesYNoParesToolStripMenuItem.Click += new System.EventHandler(this.segmentarParesYNoParesToolStripMenuItem_Click);
+            // 
+            // ordenarFilasPorElNúmeroDePrimosToolStripMenuItem
+            // 
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Name = "ordenarFilasPorElNúmeroDePrimosToolStripMenuItem";
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Text = "10.Ordenar filas por el número de primos";
+            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Click += new System.EventHandler(this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -333,12 +348,42 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Rigor";
             // 
-            // ordenarFilasPorElNúmeroDePrimosToolStripMenuItem
+            // verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem
             // 
-            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Name = "ordenarFilasPorElNúmeroDePrimosToolStripMenuItem";
-            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
-            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Text = "10.Ordenar filas por el número de primos";
-            this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Click += new System.EventHandler(this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem_Click);
+            this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem.Name = "verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem";
+            this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem.Size = new System.Drawing.Size(350, 22);
+            this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem.Text = "8.Verificar si una matriz esta incluida en otra";
+            this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem.Click += new System.EventHandler(this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem_Click);
+            // 
+            // matriz2ToolStripMenuItem
+            // 
+            this.matriz2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargarToolStripMenuItem1,
+            this.descargarToolStripMenuItem1});
+            this.matriz2ToolStripMenuItem.Name = "matriz2ToolStripMenuItem";
+            this.matriz2ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.matriz2ToolStripMenuItem.Text = "Matriz 2";
+            // 
+            // cargarToolStripMenuItem1
+            // 
+            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
+            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.cargarToolStripMenuItem1.Text = "Cargar";
+            this.cargarToolStripMenuItem1.Click += new System.EventHandler(this.cargarToolStripMenuItem1_Click);
+            // 
+            // descargarToolStripMenuItem1
+            // 
+            this.descargarToolStripMenuItem1.Name = "descargarToolStripMenuItem1";
+            this.descargarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.descargarToolStripMenuItem1.Text = "Descargar";
+            this.descargarToolStripMenuItem1.Click += new System.EventHandler(this.descargarToolStripMenuItem1_Click);
+            // 
+            // encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem
+            // 
+            this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem.Name = "encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem";
+            this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem.Text = "6.Encontrar el elemento con mayor frecuencia de cada fila y añadir C++";
+            this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem.Click += new System.EventHandler(this.encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -413,6 +458,12 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ToolStripMenuItem segmentarParesYNoParesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenarFilasPorElNúmeroDePrimosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem matriz2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem encontrarElElementoConMayorFrecuenciaDeCadaFilaYAñadirCToolStripMenuItem;
     }
 }
 

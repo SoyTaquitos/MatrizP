@@ -71,6 +71,30 @@ namespace MatrizP
             {
                 this.Intercambiar(f1, i, f2, i);
             }
+        }public bool BusquedaDeUnElemento(int ele)
+        {
+            bool b = false;
+            int f1, c1;
+            for (f1 = 1; f1 <= f; f1++)
+            {
+                c1 = 1;
+                while ((c1 <= c) && (b == false))
+                {
+                    if (ele == m[f1, c1])
+                    {
+                        b = true;
+                    }
+                    c1++;
+                }
+            }
+            return b;
+        }
+        public void OrdenarUnaFila(int fila)
+        {
+            for (int c1 = 1; c1 <= c; c1++)
+            {
+
+            }
         }
 
         //Practico
@@ -187,7 +211,7 @@ namespace MatrizP
         }
         public void MayorFrecuenciaUltimaColumna() //Ejercicio 6
         {
-
+           
         }
         public bool VerificarSiEstaOrdenadaConRigor(int r) //Ejercicio 7
         {
@@ -209,13 +233,25 @@ namespace MatrizP
             }
             return b;
         }     
-        public bool VerificarSiUnaMatrizEstaEnOtra() //Ejercicio 8
+        public bool VerificarSiUnaMatrizEstaEnOtra(Matriz m2) //Ejercicio 8
         {
-            bool verif = false;
-
-            return verif;
+            bool verif = false;           
+            int f1, c1;
+            c1 = 1;
+            for (f1 = 1; f1 <= f; f1++)
+            {
+                for (c1 = 1; c1 <= c; c1++)
+                {
+                    verif = m2.BusquedaDeUnElemento(m[f1, c1]);
+                    if (verif == false)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }   
-        public void SegmentarFilasEnParesImpares() //Ejercicio 9 mal
+        public void SegmentarFilasEnParesImpares() //Ejercicio 9 está mal
         {
             Numeros ele = new Numeros();
             Numeros ele2 = new Numeros();            
