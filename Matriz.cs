@@ -88,15 +88,21 @@ namespace MatrizP
                 }
             }
             return b;
-        }
-        public void OrdenarUnaFila(int fila)
+        }        
+        public void OrdenarUnaFilaMenMay(int nf)
         {
-            for (int c1 = 1; c1 <= c; c1++)
+            // i = Inicio; d = Desplazamiento
+            for (int i = 1; i <= c-1; i++)
             {
-
+                for (int d = c; d >= i + 1; d--)
+                {
+                    if(m[nf,d] < m[nf,d- 1])
+                    {
+                        this.Intercambiar(nf,d, nf,d-1);
+                    }
+                }
             }
         }
-
         //Practico
         public double AcumularConPrimo() //Ejercicio 1
         {
