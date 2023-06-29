@@ -135,7 +135,10 @@ namespace MatrizP
                 }
             }
         }
+        
+
         //Practico
+        // PARTE 1
         public double AcumularConPrimo() //Ejercicio 1
         {
             Numeros n = new Numeros();
@@ -330,8 +333,67 @@ namespace MatrizP
                 }
             }
         }
-
-
-
+        //PARTE 2
+        public void OrdenarPorFrecuenciaSecuencia() //Ejercicio 1
+        {
+            int i;
+            for (int fp = 1; fp <= f; fp++)
+            {
+                for (int cp = 1; cp <= c; cp++)
+                {
+                    for (int fd = fp; fd <= f; fd++)
+                    {
+                        if (fd == fp)
+                        {
+                            i = cp;
+                        }
+                        else
+                        {
+                            i = 1;
+                        }
+                        for (int cd = i; cd <= c; cd++)
+                        {
+                            if (m[fd, cd] < m[fp, cp])
+                            {
+                                this.Intercambiar(fd, cd, fp, cp);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        public void OrdenarMatrizSenozoidal() //Ejercicio 2 //Verlo
+        {
+            int i;
+            bool b = true;
+            for (int cp = 1; cp <= c; cp++)
+            {
+                if (b)
+                    for (int fp = f; fp >= 1; fp--)
+                        for (int cd = cp; cd <= c; cd++)
+                        {
+                            if (cd == cp)
+                                i = fp;
+                            else
+                                i = f;
+                            for (int fd = i; fd >= 1; fd--)
+                                if (m[fd, cd] < m[fp, cp])
+                                    this.Intercambiar(fd, cd, fp, cp);
+                        }
+                else
+                    for (int fp = 1; fp <= f; fp++)
+                        for (int cd = cp; cd <= c; cd++)
+                        {
+                            if (cd == cp)
+                                i = fp;
+                            else
+                                i = 1;
+                            for (int fd = i; fd <= f; fd++)
+                                if (m[fd, cd] < m[fp, cp])
+                                    this.Intercambiar(fd, cd, fp, cp);
+                        }
+                b = !b;
+            }
+        }
     }
 }

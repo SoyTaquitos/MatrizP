@@ -90,7 +90,20 @@ namespace MatrizP
         {
             m1.MayorFrecuenciaUltimaColumna();
             textBox8.Text = m1.Descargar();
-        } 
+        }
+
+        private void ordenamientoSenozoidalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarMatrizSenozoidal();
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarPorFrecuenciaSecuencia();
+            textBox8.Text = m1.Descargar();
+        }
+
         private void verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox8.Text = string.Concat(m1.VerificarSiUnaMatrizEstaEnOtra(m2));
