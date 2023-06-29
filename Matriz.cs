@@ -443,7 +443,7 @@ namespace MatrizP
                     b = !b;
                 }
         }
-        public void OrdenarTriangularSuperior()
+        public void OrdenarTriangularSuperior() //Ejercicio 4
         {
             int fp, cp, fd, cd, i;
             for (fp = 1; fp <= f - 1; fp++)
@@ -460,16 +460,15 @@ namespace MatrizP
                                 this.Intercambiar(fd, cd, fp, cp);
                     }
         }
-        public void OrdenarTriangularInferior()
+        public void SegmentarParImparTriangularInferiorDerecha() //Ejercicio 5
         {
-            int fp, cp, fd, cd, i;
             Numeros nu1, nu2;
             nu1 = new Numeros();
             nu2 = new Numeros();
-            for (cp = 2; cp <= c; cp++)
-                for (fp = f; fp >= (f + 2) - cp; fp--)
-                    for (cd = cp; cd <= c; cd++)
-                        for (fd = fp; fd >= (f + 2) - cd; fd--)
+            for (int cp = 2; cp <= c; cp++)
+                for (int fp = f; fp >= (f + 2) - cp; fp--)
+                    for (int cd = cp; cd <= c; cd++)
+                        for (int fd = fp; fd >= (f + 2) - cd; fd--)
                         {
                             nu1.Cargar(m[fp, cp]); nu2.Cargar(m[fd, cd]);
                             if (!nu1.VerificarPar() && nu2.VerificarPar() ||
@@ -479,8 +478,32 @@ namespace MatrizP
                                 this.Intercambiar(fd, cd, fp, cp);
                         }
         }
-
-
-
+        public void OrdenamientoDiagonal() //Ejercicio 6
+        {   
+            for (int fp = 1; fp <= f; fp++)
+                for (int cp = (c + 1) - fp; cp >= (c + 1) - fp; cp--)
+                    for (int fd = fp; fd <= f; fd++)
+                        for (int cd = (c + 1) - fd; cd >= (c + 1) - fd; cd--)
+                            if (m[fd, cd] < m[fp, cp])
+                                this.Intercambiar(fd, cd, fp, cp);
+        }
+        public void EncontrarElementoMayorAñadir() //Ejercicio 7
+        {
+            int i, may;
+            i = 0;
+            for (int f1 = f; f1 >= 1; f1--)
+            {
+                i++;
+                may = m[f1, i];
+                m[f1, c + 1] = may;
+                for (int c1 = i + 1; c1 <= c; c1++)
+                    if (m[f1, c1] > may)
+                    {
+                        may = m[f1, c1];
+                        m[f1, c + 1] = may;
+                    }
+            }
+            c++;
+        }
     }
 }

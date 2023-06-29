@@ -118,7 +118,19 @@ namespace MatrizP
 
         private void ordenarTriangularInferiorDerechaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            m1.OrdenarTriangularInferior();
+            m1.SegmentarParImparTriangularInferiorDerecha();
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void ordenamienoDiagonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenamientoDiagonal();
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void añadirElementoMayorAUltimaColumnaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.EncontrarElementoMayorAñadir();
             textBox8.Text = m1.Descargar();
         }
 
