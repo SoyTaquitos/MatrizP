@@ -443,7 +443,23 @@ namespace MatrizP
                     b = !b;
                 }
         }
+        public void OrdenarTriangularSuperior()
+        {
+            int fp, cp, fd, cd, i;
+            for (fp = 1; fp <= f - 1; fp++)
+                for (cp = (fp + 1); cp <= c; cp++)
+                    for (fd = fp; fd <= f - 1; fd++)
+                    {
+                        if (fd == fp)
+                            i = cp;
+                        else
+                            i = fd + 1;
 
+                        for (cd = i; cd <= c; cd++)
+                            if (m[fd, cd] < m[fp, cp])
+                                this.Intercambiar(fd, cd, fp, cp);
+                    }
+        }
 
 
 
