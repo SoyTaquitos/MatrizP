@@ -104,6 +104,12 @@ namespace MatrizP
             textBox8.Text = m1.Descargar();
         }
 
+        private void intercalarFiboNoFiboToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.IntercalarFiboNoFibo();
+            textBox8.Text = m1.Descargar();
+        }
+
         private void verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox8.Text = string.Concat(m1.VerificarSiUnaMatrizEstaEnOtra(m2));

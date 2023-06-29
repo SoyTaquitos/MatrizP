@@ -70,6 +70,7 @@
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenamientoSenozoidalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intercalarFiboNoFiboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +104,8 @@
             this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem,
             this.toolStripTextBox2,
             this.toolStripMenuItem3,
-            this.ordenamientoSenozoidalToolStripMenuItem});
+            this.ordenamientoSenozoidalToolStripMenuItem,
+            this.intercalarFiboNoFiboToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.matriz1ToolStripMenuItem.Text = "Matriz 1";
@@ -412,6 +414,13 @@
             this.ordenamientoSenozoidalToolStripMenuItem.Text = "2. Ordenamiento Senozoidal";
             this.ordenamientoSenozoidalToolStripMenuItem.Click += new System.EventHandler(this.ordenamientoSenozoidalToolStripMenuItem_Click);
             // 
+            // intercalarFiboNoFiboToolStripMenuItem
+            // 
+            this.intercalarFiboNoFiboToolStripMenuItem.Name = "intercalarFiboNoFiboToolStripMenuItem";
+            this.intercalarFiboNoFiboToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.intercalarFiboNoFiboToolStripMenuItem.Text = "3.Intercalar Fibo NoFibo";
+            this.intercalarFiboNoFiboToolStripMenuItem.Click += new System.EventHandler(this.intercalarFiboNoFiboToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,6 +503,7 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem ordenamientoSenozoidalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem intercalarFiboNoFiboToolStripMenuItem;
     }
 }
 

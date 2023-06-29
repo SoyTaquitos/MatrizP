@@ -64,6 +64,23 @@ namespace MatrizP
         {
 
             return (n % 2 == 0);
-        }    
+        }
+        public bool VerificarFibo()
+        {
+            int a = -1;
+            int b = 1;
+            int c = a + b;
+            while (c < n)
+            {
+                a = b;
+                b = c;
+                c = a + b;
+            }
+            if (c == n)
+            {
+                return true;
+            }            
+            return false;
+        }
     }
 }

@@ -362,7 +362,7 @@ namespace MatrizP
                 }
             }
         }
-        public void OrdenarMatrizSenozoidal() //Ejercicio 2 //Verlo
+        public void OrdenarMatrizSenozoidal() //Ejercicio 2 //Verlo denuevo
         {
             int i;
             bool b = true;
@@ -395,5 +395,58 @@ namespace MatrizP
                 b = !b;
             }
         }
+        public void IntercalarFiboNoFibo() //Ejercicio 3 //Mirarlo
+        {
+            int fd, fp, cp, cd, i;
+            bool b = true;
+            Numeros nu1, nu2;
+            nu1 = new Numeros();
+            nu2 = new Numeros();
+            for (fp = f; fp >= 1; fp--)
+                for (cp = 1; cp <= c; cp++)
+                {
+                    if (b)
+                        for (fd = fp; fd >= 1; fd--)
+                        {
+                            if (fd == fp)
+                                i = cp;
+                            else
+                                i = 1;
+                            for (cd = i; cd <= c; cd++)
+                            {
+                                nu1.Cargar(m[fp, cp]); nu2.Cargar(m[fd, cd]);
+                                if (!nu1.VerificarFibo() && nu2.VerificarFibo() ||
+                                     nu1.VerificarFibo() && nu2.VerificarFibo() && m[fd, cd] < m[fp, cp] ||
+                                    !nu1.VerificarFibo() && !nu2.VerificarFibo() && m[fd, cd] < m[fp, cp])
+
+                                    this.Intercambiar(fd, cd, fp, cp);
+                            }
+                        }
+                    else
+
+                        for (fd = fp; fd >= 1; fd--)
+                        {
+                            if (fd == fp)
+                                i = cp;
+                            else
+                                i = 1;
+                            for (cd = i; cd <= c; cd++)
+                            {
+                                nu1.Cargar(m[fp, cp]); nu2.Cargar(m[fd, cd]);
+                                if (nu1.VerificarFibo() && !nu2.VerificarFibo() ||
+                                   !nu1.VerificarFibo() && !nu2.VerificarFibo() && m[fd, cd] < m[fp, cp] ||
+                                    nu1.VerificarFibo() && nu2.VerificarFibo() && m[fd, cd] < m[fp, cp])
+
+                                    this.Intercambiar(fd, cd, fp, cp);
+                            }
+                        }
+                    b = !b;
+                }
+        }
+
+
+
+
+
     }
 }
