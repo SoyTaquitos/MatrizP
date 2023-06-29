@@ -460,7 +460,25 @@ namespace MatrizP
                                 this.Intercambiar(fd, cd, fp, cp);
                     }
         }
+        public void OrdenarTriangularInferior()
+        {
+            int fp, cp, fd, cd, i;
+            Numeros nu1, nu2;
+            nu1 = new Numeros();
+            nu2 = new Numeros();
+            for (cp = 2; cp <= c; cp++)
+                for (fp = f; fp >= (f + 2) - cp; fp--)
+                    for (cd = cp; cd <= c; cd++)
+                        for (fd = fp; fd >= (f + 2) - cd; fd--)
+                        {
+                            nu1.Cargar(m[fp, cp]); nu2.Cargar(m[fd, cd]);
+                            if (!nu1.VerificarPar() && nu2.VerificarPar() ||
+                                !nu1.VerificarPar() && !nu2.VerificarPar() && m[fd, cd] < m[fp, cp] ||
+                                 nu1.VerificarPar() && nu2.VerificarPar() && m[fd, cd] < m[fp, cp])
 
+                                this.Intercambiar(fd, cd, fp, cp);
+                        }
+        }
 
 
 

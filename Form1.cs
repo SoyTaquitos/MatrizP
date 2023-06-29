@@ -116,6 +116,12 @@ namespace MatrizP
             textBox8.Text = m1.Descargar();
         }
 
+        private void ordenarTriangularInferiorDerechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarTriangularInferior();
+            textBox8.Text = m1.Descargar();
+        }
+
         private void verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox8.Text = string.Concat(m1.VerificarSiUnaMatrizEstaEnOtra(m2));
