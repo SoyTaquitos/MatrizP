@@ -44,6 +44,14 @@
             this.verificarSiUnaMatrizEstaIncluidaEnOtraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.segmentarParesYNoParesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenamientoSenozoidalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intercalarFiboNoFiboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarTriangularSuperiorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarTriangularInferiorDerechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenamienoDiagonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matriz2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,14 +75,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordenamientoSenozoidalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.intercalarFiboNoFiboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordenarTriangularSuperiorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordenarTriangularInferiorDerechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordenamienoDiagonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -213,6 +213,62 @@
             this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
             this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Text = "10.Ordenar filas por el número de primos";
             this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem.Click += new System.EventHandler(this.ordenarFilasPorElNúmeroDePrimosToolStripMenuItem_Click);
+            // 
+            // toolStripTextBox2
+            // 
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTextBox2.Name = "toolStripTextBox2";
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox2.Text = "Parte 2";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(452, 22);
+            this.toolStripMenuItem3.Text = "1.Ordenar elementos por frecuencia y secuencia ";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // ordenamientoSenozoidalToolStripMenuItem
+            // 
+            this.ordenamientoSenozoidalToolStripMenuItem.Name = "ordenamientoSenozoidalToolStripMenuItem";
+            this.ordenamientoSenozoidalToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.ordenamientoSenozoidalToolStripMenuItem.Text = "2. Ordenamiento Senozoidal";
+            this.ordenamientoSenozoidalToolStripMenuItem.Click += new System.EventHandler(this.ordenamientoSenozoidalToolStripMenuItem_Click);
+            // 
+            // intercalarFiboNoFiboToolStripMenuItem
+            // 
+            this.intercalarFiboNoFiboToolStripMenuItem.Name = "intercalarFiboNoFiboToolStripMenuItem";
+            this.intercalarFiboNoFiboToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.intercalarFiboNoFiboToolStripMenuItem.Text = "3.Intercalar Fibo NoFibo";
+            this.intercalarFiboNoFiboToolStripMenuItem.Click += new System.EventHandler(this.intercalarFiboNoFiboToolStripMenuItem_Click);
+            // 
+            // ordenarTriangularSuperiorToolStripMenuItem
+            // 
+            this.ordenarTriangularSuperiorToolStripMenuItem.Name = "ordenarTriangularSuperiorToolStripMenuItem";
+            this.ordenarTriangularSuperiorToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.ordenarTriangularSuperiorToolStripMenuItem.Text = "4.Ordenar triangular superior";
+            this.ordenarTriangularSuperiorToolStripMenuItem.Click += new System.EventHandler(this.ordenarTriangularSuperiorToolStripMenuItem_Click);
+            // 
+            // ordenarTriangularInferiorDerechaToolStripMenuItem
+            // 
+            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Name = "ordenarTriangularInferiorDerechaToolStripMenuItem";
+            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Text = "5.Segmentar pares e impares triangular inferior derecha";
+            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Click += new System.EventHandler(this.ordenarTriangularInferiorDerechaToolStripMenuItem_Click);
+            // 
+            // ordenamienoDiagonalToolStripMenuItem
+            // 
+            this.ordenamienoDiagonalToolStripMenuItem.Name = "ordenamienoDiagonalToolStripMenuItem";
+            this.ordenamienoDiagonalToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.ordenamienoDiagonalToolStripMenuItem.Text = "6.Ordenamieno diagonal";
+            this.ordenamienoDiagonalToolStripMenuItem.Click += new System.EventHandler(this.ordenamienoDiagonalToolStripMenuItem_Click);
+            // 
+            // añadirElementoMayorAUltimaColumnaToolStripMenuItem
+            // 
+            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Name = "añadirElementoMayorAUltimaColumnaToolStripMenuItem";
+            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
+            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Text = "7. Añadir elemento mayor a ultima columna";
+            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Click += new System.EventHandler(this.añadirElementoMayorAUltimaColumnaToolStripMenuItem_Click);
             // 
             // matriz2ToolStripMenuItem
             // 
@@ -401,62 +457,6 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Rigor";
             // 
-            // toolStripTextBox2
-            // 
-            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox2.Text = "Parte 2";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(452, 22);
-            this.toolStripMenuItem3.Text = "1.";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
-            // ordenamientoSenozoidalToolStripMenuItem
-            // 
-            this.ordenamientoSenozoidalToolStripMenuItem.Name = "ordenamientoSenozoidalToolStripMenuItem";
-            this.ordenamientoSenozoidalToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.ordenamientoSenozoidalToolStripMenuItem.Text = "2. Ordenamiento Senozoidal";
-            this.ordenamientoSenozoidalToolStripMenuItem.Click += new System.EventHandler(this.ordenamientoSenozoidalToolStripMenuItem_Click);
-            // 
-            // intercalarFiboNoFiboToolStripMenuItem
-            // 
-            this.intercalarFiboNoFiboToolStripMenuItem.Name = "intercalarFiboNoFiboToolStripMenuItem";
-            this.intercalarFiboNoFiboToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.intercalarFiboNoFiboToolStripMenuItem.Text = "3.Intercalar Fibo NoFibo";
-            this.intercalarFiboNoFiboToolStripMenuItem.Click += new System.EventHandler(this.intercalarFiboNoFiboToolStripMenuItem_Click);
-            // 
-            // ordenarTriangularSuperiorToolStripMenuItem
-            // 
-            this.ordenarTriangularSuperiorToolStripMenuItem.Name = "ordenarTriangularSuperiorToolStripMenuItem";
-            this.ordenarTriangularSuperiorToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.ordenarTriangularSuperiorToolStripMenuItem.Text = "4.Ordenar triangular superior";
-            this.ordenarTriangularSuperiorToolStripMenuItem.Click += new System.EventHandler(this.ordenarTriangularSuperiorToolStripMenuItem_Click);
-            // 
-            // ordenarTriangularInferiorDerechaToolStripMenuItem
-            // 
-            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Name = "ordenarTriangularInferiorDerechaToolStripMenuItem";
-            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Text = "5.Segmentar pares e impares triangular inferior derecha";
-            this.ordenarTriangularInferiorDerechaToolStripMenuItem.Click += new System.EventHandler(this.ordenarTriangularInferiorDerechaToolStripMenuItem_Click);
-            // 
-            // ordenamienoDiagonalToolStripMenuItem
-            // 
-            this.ordenamienoDiagonalToolStripMenuItem.Name = "ordenamienoDiagonalToolStripMenuItem";
-            this.ordenamienoDiagonalToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.ordenamienoDiagonalToolStripMenuItem.Text = "6.Ordenamieno diagonal";
-            this.ordenamienoDiagonalToolStripMenuItem.Click += new System.EventHandler(this.ordenamienoDiagonalToolStripMenuItem_Click);
-            // 
-            // añadirElementoMayorAUltimaColumnaToolStripMenuItem
-            // 
-            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Name = "añadirElementoMayorAUltimaColumnaToolStripMenuItem";
-            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Size = new System.Drawing.Size(452, 22);
-            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Text = "7. Añadir elemento mayor a ultima columna";
-            this.añadirElementoMayorAUltimaColumnaToolStripMenuItem.Click += new System.EventHandler(this.añadirElementoMayorAUltimaColumnaToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,7 +485,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Matteo Espinoza Sanchez || Program I";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
